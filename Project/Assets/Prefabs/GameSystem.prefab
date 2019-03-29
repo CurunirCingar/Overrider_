@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1452830597518810}
+  m_IsPrefabParent: 1
+--- !u!1 &1452830597518810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4153395035998162}
+  - component: {fileID: 114448648131093766}
+  - component: {fileID: 114666023201703110}
+  - component: {fileID: 114510609032993690}
+  - component: {fileID: 114572876016116312}
+  m_Layer: 0
+  m_Name: GameSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4153395035998162
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452830597518810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.750668, y: 19.235779, z: -52.802517}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114448648131093766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452830597518810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da33d8903114f344c8df9c8505225045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalTimeValue: 1
+  freezeTimeValue: 0
+--- !u!114 &114510609032993690
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452830597518810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3d1d7851294afa4cb71c6fd114cdf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelTransform: {fileID: 0}
+  menuDropdown: {fileID: 0}
+  activateBugButton: {fileID: 0}
+  isShown: 0
+--- !u!114 &114572876016116312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452830597518810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a98d8af5ffe9b46a2db45abc78c748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraEffect: {fileID: 0}
+  totalBalance: 150
+  balance: 100
+  energySlider: {fileID: 0}
+  energyText: {fileID: 0}
+--- !u!114 &114666023201703110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452830597518810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b084af55e14ec44bad556ab783f689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentRegimeState: 0
+  timeManager: {fileID: 114448648131093766}
+  personCamera: {fileID: 0}
+  personInput: {fileID: 0}
+  personController: {fileID: 0}
+  actionMenu: {fileID: 114510609032993690}
+  balanceManager: {fileID: 114572876016116312}
+  cameraManager: {fileID: 0}
+  standardMaterial: {fileID: 2100000, guid: b6bceff5277af3240a0b80da627fe619, type: 2}
+  glitchMaterial: {fileID: 2100000, guid: 43bad87608cfdd94a913ab2f1e4fd889, type: 2}
+  interactableMaterial: {fileID: 2100000, guid: 96e46c505d723e24db0d150b7cd1d2c9,
+    type: 2}
+  hackingRegimeText: {fileID: 0}
